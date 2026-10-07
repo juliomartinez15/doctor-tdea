@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Menu() {
 
     return (
@@ -9,15 +11,15 @@ function Menu() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Consulta</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Médicos</a>
-                        </li>
+                        <Link className="nav-item nav-link" to="/">
+                            Home
+                        </Link>
+                        <Link className="nav-item nav-link" to="/consultation">
+                            Consulta
+                        </Link>
+                       <Link className="nav-item nav-link" to="/doctors">
+                           Médicos
+                        </Link>
                     </ul>
                 </div>
             </div>

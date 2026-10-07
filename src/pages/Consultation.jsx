@@ -62,11 +62,11 @@ function Consultation() {
             {
                 cargando ? (
                 <button 
-                    class="btn btn-outline-success" 
+                    className="btn btn-outline-success" 
                     type="button" 
                     disabled
                 >
-                    <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                    <span className="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
                     <span role="status">Loading...</span>
                 </button>
                 ) 
@@ -81,7 +81,7 @@ function Consultation() {
                 )
             }
             {error && (
-               <div class="alert alert-danger" role="alert">
+               <div className="alert alert-danger" role="alert">
                    Ha ocurrido un error
                 </div>
             ) }
